@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+h1:hover{
+    background: rgb(204, 133, 0);
+    opacity: 0.5;
+}
+
+h1 span {
+    font-size: 200px;
+    opacity: 18%;
+}
+
+.button section input {
+    font-size: 1.5em;
+    background:rgb(230, 149, 0);
+    color: #000000;
+    padding: 1em 1.9em;
+    margin-top: -3px;
+    cursor: default;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.button:hover {
+    opacity: 0.4;
+    background: rgb(204, 133, 0);
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.galeria {
+    display: flex;
+    height: 20em;
+    margin: 2em;
+    gap: 0.5em;
+}
+
+.galeria div {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transition: all 0.8s cubic-bezier(2.165, 0.84, 0.44, 1);
+}
+
+.galeria div:hover{
+    flex: 4;
+}
+
+.galeria:hover div:not(:hover){
+    filter: blur(3px);
+    filter: grayscale(1) grayscale(100%) opacity( 50%);
+}
